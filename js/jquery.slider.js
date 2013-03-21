@@ -440,8 +440,6 @@
 
       switch (pointer.uid) {
         case 0:
-          console.log((sizes.border + sizes.label / 2) + "a " + (another_label.o.offset().left - this.sizes.domOffset.left));
-
           if (sizes.border + sizes.label / 2 > another_label.o.offset().left - this.sizes.domOffset.left) {
             another_label.o.css({
               visibility: "hidden"
