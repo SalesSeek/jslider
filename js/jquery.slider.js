@@ -164,7 +164,8 @@
       round: 0,
       format: { format: "#,##0.##" },
       value: "5;7",
-      dimension: ""
+      dimension: "",
+      mergeAdjacentLabels: true
     },
     
     className: "jslider",
@@ -445,7 +446,7 @@
 	    border: ( prc * this.sizes.domWidth ) / 100
 	  };
 
-    if( !this.settings.single ){
+    if( !this.settings.single && this.settings.mergeAdjacentLabels ){
       // glue if near;
       var another = this.o.pointers[1-pointer.uid];
     	var another_label = this.o.labels[another.uid];
